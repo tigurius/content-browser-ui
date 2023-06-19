@@ -18,7 +18,7 @@ const mapDispatchToProps = dispatch => ({
 
 function TableSettings(props) {
   return (
-    <Dropdown label="Table options" icon={<SettingsIcon fontSize="small" color="inherit" />}>
+    <Dropdown label="Options" icon={<SettingsIcon fontSize="small" color="inherit" />}>
       {props.availableColumns.map(column => {
         if (column.id === 'name') return false;
         return (
