@@ -25,8 +25,8 @@ function Footer(props) {
         {props.selectedItems.map(item => <FooterItem key={`item-${item.value}`} item={item} onClick={() => props.setSelectedItem(item, false)} />)}
       </div>
       <div className={S.actions} data-cy="footer-actions">
-        <Button variant="cancel" onClick={props.onCancel}>Cancel</Button>
-        <Button variant="primary" disabled={props.selectedItems.length < props.min_selected} onClick={() => props.onConfirm(props.selectedItems)}>Confirm</Button>
+        <Button variant="cancel" onClick={props.onCancel}>Annuler</Button>
+        <Button variant="primary" disabled={props.selectedItems.length < props.min_selected} onClick={() => props.onConfirm(props.selectedItems)}>Confirmer</Button>
       </div>
     </div>
   );
