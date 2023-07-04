@@ -15,7 +15,7 @@ function BrowserContent(props) {
   return (
     <div className={S.content}>
       <Tabs headerContent={props.config.has_preview ? <TogglePreview /> : ''}>
-        <div id="tab-browse" label="Browse" icon={<ListIcon fontSize="default" color="inherit" />}>
+        <div id="tab-browse" label="Explorateur" icon={<ListIcon fontSize="default" color="inherit" />}>
           <div className={S.panels}>
             {props.config.has_tree ?
               <div className={S.treePanel} data-cy="tree-panel">
@@ -27,7 +27,7 @@ function BrowserContent(props) {
           </div>
         </div>
         {props.config.has_search &&
-          <div id="tab-search" label="Search" icon={<SearchIcon fontSize="small" color="inherit" />}>
+          <div id="tab-search" label="Recherche" icon={<SearchIcon fontSize="small" color="inherit" />}>
             <div className={S.panels} data-cy="search-panel">
               <Search/>
             </div>
