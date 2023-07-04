@@ -32,10 +32,10 @@ function Search(props) {
             <Input
               onChange={(e) => props.setSearchTerm(e.target.value)}
               value={props.searchTerm}
-              placeholder='Search...'
+              placeholder='Rechercher...'
               sufixed={true}
             />
-            <Button type='submit' prefixed={true}>Search</Button>
+            <Button type='submit' prefixed={true}>Rechercher</Button>
           </form>
         </div>
       </div>
